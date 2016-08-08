@@ -1,0 +1,175 @@
+.intro
+  position: relative
+  display: flex
+  width: 900px
+  max-width: 75%
+  height: 100%
+  flex-direction: column
+  justify-content: center
+  margin: 0 auto
+
+  @media (max-width: 1180px)
+    max-width: 100%
+
+  &--banner
+    position: relative
+    height: 475px
+
+    &::before
+      content: ""
+      position: absolute
+      bottom: 20px
+      left: -15px
+      right: 0
+      height: 2px
+      background-color: $muted-gray
+
+    &::after
+      content: ""
+      position: absolute
+      bottom: 18px
+      left: 0
+      width: 30px
+      height: 4px
+      background-color: $highlight
+
+    h1
+      position: relative
+      font-size: 68px
+      font-weight: 900
+      line-height: 1
+      z-index: 1
+
+    button
+      position: relative
+      padding: 5px 17px 5px 12px
+      font-weight: 700
+      text-transform: uppercase
+      background-color: transparent
+      border: none
+
+      .btn-background
+        position: absolute
+        top: 0
+        left: 23px
+        right: 0
+        height: 100%
+        background-color: $highlight
+        z-index: -1
+        transition: left .2s ease-in-out
+
+      &:hover
+        .btn-background
+          left: 0
+
+      &:focus
+        outline: none
+
+      svg
+        position: relative
+        left: 5px
+        width: 15px
+        fill: $white
+
+    img
+      position: absolute
+      bottom: 21px
+      right: -12px
+
+  &--options
+    display: flex
+    justify-content: space-between
+    margin: 0
+    padding: 0
+    list-style: none
+
+    & > a
+      max-width: 250px
+      text-decoration: none
+      color: $muted-gray
+      transition: color .2s ease-in-out
+
+      &:hover
+        color: $white
+
+    h3
+      font-size: 16px
+      text-transform: uppercase
+
+    p
+      margin-bottom: 0
+
+@media (max-width: 900px)
+
+  .intro
+
+    &--banner
+      height: 380px
+
+      h1
+        font-size: 55px
+
+      img
+        width: 430px
+
+    &--options
+
+      & > a
+        margin-right: 30px
+
+        &:last-child
+          margin-right: 0
+
+@media (max-width: 767px)
+
+  .intro
+
+    &--banner
+      height: 305px
+
+      h1
+        font-size: 44px
+
+      img
+        width: 330px
+
+    &--options
+      display: block
+
+      & > a
+        display: block
+        max-width: 100%
+        margin: 0 0 30px 0
+
+        &:last-child
+          margin-bottom: 0
+
+@media (max-width: 600px)
+
+  .intro
+
+    &--banner
+      height: 360px
+
+      h1
+        font-size: 55px
+
+      img
+        display: none
+
+@media (max-width: 600px) and (max-height: 750px)
+
+  .intro
+
+    &--banner
+      height: auto
+
+      &::before,
+      &::after
+        display: none
+
+      h1
+        margin-top: 0
+
+    &--options
+      display: none
