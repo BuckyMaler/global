@@ -1811,7 +1811,7 @@ body {
     transform-style: preserve-3d;
     -webkit-transform: translateX(350px) translateZ(-1000px);
     transform: translateX(350px) translateZ(-1000px);
-    font-size: 55px;
+    font-size: 30px;
     font-weight: 900;
     opacity: 0;
     cursor: pointer;
