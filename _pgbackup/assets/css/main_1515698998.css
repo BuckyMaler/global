@@ -1411,7 +1411,7 @@ body {
 }
 
 .contact--lockup .modal {
-    padding: 10px;
+    padding: 45px 45px;
     text-align: center;
     background-color: #0c0c0c;
     box-shadow: 0 0 30px 0 rgba(0,0,0,0.75);
@@ -1492,8 +1492,8 @@ body {
 }
 
 .hire h2 {
-    margin: 12px 0 1px 0;
-    font-size: 28px;
+    margin: 0 0 20px 0;
+    font-size: 30px;
     text-align: center;
 }
 
@@ -1700,7 +1700,7 @@ body {
 
 @media (max-width: 600px){
     .work-request--options label {
-        width: 141px;
+        width: 150px;
         margin-bottom: 15px;
         font-size: 14px;
     }
