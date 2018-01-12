@@ -1781,7 +1781,7 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
-    text-align: left;
+    text-align: center;
     visibility: hidden;
     -webkit-transition: visibility 0s .2s;
     transition: visibility 0s .2s;
@@ -1835,13 +1835,13 @@ body {
     content: "";
     position: absolute;
     top: 50%;
-    left: -15%;
+    left: 50%;
     -webkit-transform: translate(-50%, -25%);
     transform: translate(-50%, -25%);
-    width: 24px;
-    height: 20px;
+    width: 110%;
+    height: 15px;
     opacity: 0;
-    background-color: #ff5d0f;
+    background-color: #0f33ff;
 }
 
 .outer-nav>li.is-active::before {

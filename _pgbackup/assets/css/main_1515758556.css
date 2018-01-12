@@ -1835,7 +1835,7 @@ body {
     content: "";
     position: absolute;
     top: 50%;
-    left: -15%;
+    left: -25%;
     -webkit-transform: translate(-50%, -25%);
     transform: translate(-50%, -25%);
     width: 24px;
