@@ -1,0 +1,178 @@
+.work
+  position: relative
+  display: flex
+  width: 960px
+  max-width: 80%
+  height: 100%
+  flex-direction: column
+  justify-content: center
+  margin: 0 auto
+
+  @media (max-width: 1180px)
+    max-width: 100%
+
+  h2
+    margin: 0 0 20px 0
+    font-size: 30px
+    text-align: center
+
+  &--lockup
+    position: relative
+
+    .slider
+      position: relative
+      display: flex
+      width: 80%
+      margin: 0 auto
+      padding: 0
+      list-style: none
+
+      &--item
+        position: absolute
+        display: none
+        text-align: center
+
+        a
+          text-decoration: none
+          color: #858585
+
+        &-title
+          margin-top: 10px
+          font-size: 12px
+          font-weight: 700
+          text-transform: uppercase
+
+        &-description
+          display: none
+          max-width: 250px
+          margin: 0 auto
+
+        &-image
+          width: 150px
+          height: 150px
+          margin: 0 auto
+          border-radius: 50%
+          overflow: hidden
+
+          img
+            width: 100%
+
+        &-left
+          top: 50%
+          left: 0
+          transform: translateY(-50%)
+          display: block
+
+        &-right
+          top: 50%
+          right: 0
+          transform: translateY(-50%)
+          display: block
+
+        &-center
+          position: relative
+          top: 30px
+          left: 50%
+          transform: translateX(-50%)
+          display: block
+
+          a
+            color: $white
+
+          .slider--item-title
+            margin-top: 25px
+            font-size: 16px
+
+          .slider--item-description
+            display: block
+
+          .slider--item-image
+            width: 300px
+            height: 300px
+
+    .slider--next,
+    .slider--prev
+      position: absolute
+      top: 160px
+      display: flex
+      width: 50px
+      height: 50px
+      align-items: center
+      justify-content: center
+      background-color: $muted-gray
+      border-radius: 50%
+      cursor: pointer
+
+      svg
+        width: 20px
+        fill: $white
+
+    .slider--next
+      right: 0
+
+    .slider--prev
+      left: 0
+
+@media (max-width: 900px)
+
+  .work
+
+    &--lockup
+
+      .slider
+
+        &--item
+
+          &-image
+            width: 120px
+            height: 120px
+
+          &-center
+
+            .slider--item-image
+              width: 240px
+              height: 240px
+
+      .slider--next,
+      .slider--prev
+        top: 130px
+
+@media (max-width: 767px)
+
+  .work
+
+    &--lockup
+
+      .slider
+        width: 75%
+
+        &--item
+
+          &-image
+            width: 90px
+            height: 90px
+
+          &-center
+
+            .slider--item-image
+              width: 190px
+              height: 190px
+
+      .slider--next,
+      .slider--prev
+        top: 105px
+
+@media (max-width: 600px)
+
+  .work
+
+    &--lockup
+
+      .slider
+        width: auto
+
+        &--item
+
+          &-left,
+          &-right
+            display: none

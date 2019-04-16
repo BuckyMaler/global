@@ -1,0 +1,189 @@
+.about
+  position: relative
+  display: flex
+  width: 900px
+  max-width: 75%
+  height: 100%
+  flex-direction: column
+  justify-content: center
+  margin: 0 auto
+
+  @media (max-width: 1180px)
+    max-width: 100%
+
+  &--banner
+    position: relative
+    height: 475px
+
+    &::before
+      content: ""
+      position: absolute
+      top: 20px
+      left: 200px
+      transform: rotate(-25deg)
+      border: 5px solid $highlight
+      border-right-color: transparent
+      border-bottom-color: transparent
+
+    &::after
+      content: ""
+      position: absolute
+      top: 75px
+      left: 400px
+      transform: rotate(45deg)
+      width: 10px
+      height: 10px
+      background-color: $highlight
+
+    h2
+      position: relative
+      margin-top: 35px
+      font-size: 68px
+      font-weight: 900
+      line-height: 1
+      z-index: 1
+
+      &::before
+        content: ""
+        position: absolute
+        top: 60px
+        left: 268px
+        width: 30px
+        height: 30px
+        background-color: $highlight
+        border-radius: 50%
+
+      &::after
+        content: ""
+        position: absolute
+        top: 255px
+        left: 255px
+        width: 10px
+        height: 10px
+        background-color: $highlight
+
+    a
+      padding: 5px 17px 5px 0
+      text-decoration: none
+      color: $white
+      font-weight: 700
+      text-transform: uppercase
+      background-color: transparent
+
+      &:hover
+        svg
+          left: 10px
+
+      svg
+        position: relative
+        left: 5px
+        width: 15px
+        fill: $white
+        transition: left .2s ease-in-out
+
+    img
+      position: absolute
+      bottom: -90px
+      right: -12px
+
+  &--options
+    display: flex
+    max-width: 600px
+    justify-content: space-between
+    margin: 0
+    padding: 0
+    list-style: none
+
+    & > a
+      position: relative
+      width: 150px
+      height: 75px
+      text-decoration: none
+      color: $white
+      border: 10px solid $highlight
+      background:
+        position: center
+        size: cover
+        repeat: no-repeat
+
+      &:nth-child(1)
+        background-image: url("../img/about-winners.jpg")
+
+      &:nth-child(2)
+        background-image: url("../img/about-philosophy.jpg")
+
+      &:nth-child(3)
+        background-image: url("../img/about-history.jpg")
+
+      &:hover
+        h3
+          bottom: -50px
+
+    h3
+      position: absolute
+      bottom: -38px
+      left: 10px
+      font-size: 16px
+      text-transform: uppercase
+      transition: bottom .2s ease-in-out, left .2s ease-in-out
+
+@media (max-width: 767px)
+
+  .about
+
+    &--banner
+      height: 305px
+
+      &::before
+        top: 0
+        left: 125px
+
+      &::after
+        top: 35px
+        left: 260px
+
+      h2
+        margin-top: 10px
+        font-size: 44px
+
+        &::before
+          top: 28px
+          left: 168px
+
+        &::after
+          top: 163px
+          left: 163px
+
+      img
+        width: 315px
+
+@media (max-width: 600px)
+
+  .about
+
+    &--banner
+      height: auto
+
+      &::before
+        left: 155px
+
+      &::after
+        left: 310px
+
+      h2
+        margin-top: 0
+        font-size: 55px
+
+        &::before
+          top: 43px
+          left: 214px
+
+        &::after
+          top: 205px
+          left: 205px
+
+      img
+        display: none
+
+    &--options
+      display: none
