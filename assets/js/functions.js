@@ -58,7 +58,7 @@ $( document ).ready(function() {
         lastItem = $('.side-nav').children().length - 1,
         nextPos = lastItem;
 
-    updateNavs(nextPos);
+    updateNavs(lastItem);
     updateContent(curPos, nextPos, lastItem);
 
   });
