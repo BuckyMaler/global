@@ -995,8 +995,7 @@ body {
 
 .work1--lockup .slider1--item-description {
     display: none;
-    max-width: 250px;
-    font-size:15px;
+    max-width: 300px;
     margin: 0 auto;
 }
 
